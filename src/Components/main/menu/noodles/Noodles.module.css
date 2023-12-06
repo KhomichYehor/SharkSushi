@@ -1,0 +1,167 @@
+.cardsBlock ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
+    row-gap: 30px;
+}
+
+
+.cards {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+.card{
+    width: 292px;
+    height: 405px;
+    border: 1px solid #DDA051;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 33px 35px;
+    background-color: rgb(217, 217, 217, 6%);
+    margin-right: 37px;
+    animation: fadeCards 1s ease-in-out;
+}
+@keyframes fadeCards {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #dda051;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 4px #dda051);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #DDA051;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.description{
+    width: 270px;
+    height: 40px;
+    color: #fff;
+    font-size: 8px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.value{
+    color: #DDA051;
+    font-size: 13px;
+    text-decoration:overline;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+.price{
+    padding-top: 10px;
+    font-size: 16px;
+    color: #DDA051;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #DDA051;
+    border-radius: 30px;
+    border: 1px solid #000;
+    filter: drop-shadow(0px 0px 5px #dda05100);
+    transition: 1s;
+}
+
+.button:hover {
+    filter: drop-shadow(0px 0px 5px #dda051);
+    border: 1px solid #fff
+}
+
+.order {
+    display: flex;
+    align-items: center;
+}
+
+.button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    padding: 6px 22px;
+    transition: 1s;
+    position: relative;
+}
+
+.button a:hover {
+    color: #fff;
+}
+
+
+.button a img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #DDA051;
+    position: absolute;
+    right: -50%;
+    padding: 7px;
+    transition: 1s;
+}
+
+.centerButton {
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.showMore {
+    padding: 6px 22px;
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    background-color: #DDA051;
+    border-radius: 30px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px #dda05100);
+    transition: 1s;
+    animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.showMore:hover{
+    border: 1px solid #fff;
+    filter: drop-shadow(0px 0px 10px #dda051);
+    color: #fff;
+
+}

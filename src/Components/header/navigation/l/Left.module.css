@@ -1,0 +1,17 @@
+.left {
+    display: flex;
+  }
+  
+.text {
+    color: #dda051;
+    font-weight: 400;
+    font-size: 40px;
+    filter: drop-shadow(0px 0px 5px #dda051);
+  }
+  
+.logo {
+    width: 20px;
+    height: 29px;
+    filter: drop-shadow(0px 0px 5px #dda051);
+    padding-top: 17px;
+  }
