@@ -13,13 +13,15 @@ import cart from './src/cart.png';
 
 const pizzaItems = [
     {
+        id:1,
         img: card1,
         title: "ПІЦЦА 4 СЕЗОНИ",
         description: "Соус томатний, Моцарелла терта, Чибуля червона, \n Куряча грудка, Гриби , Пепероні, \n Мисливські ковбаски, Шинка, Кукурудза,",
         value: "1 шт. 470 г",
         price: "150 грн." ,
     },
-    {
+    { 
+        id:2,
         img: card2,
         title: "ПІЦЦА 4 СИРА",
         description:
@@ -28,6 +30,7 @@ const pizzaItems = [
         price: "220 грн." ,
     },
     {
+        id:3,
         img: card3,
         title: "ПІЦЦА ГАВАЙСЬКА",
         description:
@@ -36,6 +39,7 @@ const pizzaItems = [
         price: "215 грн." ,
     },
     {
+        id:4,
         img: card4,
         title: "ПІЦЦА МОРСЬКА",
         description:
@@ -44,6 +48,7 @@ const pizzaItems = [
         price: "258 грн." ,
     },
     {
+        id:5,
         img: card5,
         title: "МОЯ ПІЦЦА",
         description:
@@ -52,6 +57,7 @@ const pizzaItems = [
         price: "205 грн." ,
     },
     {
+        id:6,
         img: card6,
         title: "ПІЦЦА СПАЙСІ",
         description:
@@ -60,6 +66,7 @@ const pizzaItems = [
         price: "190 грн." ,
     },
     {
+        id:7,
         img: card7,
         title: "ПІЦЦА МАРГАРИТА",
         description:
@@ -68,6 +75,7 @@ const pizzaItems = [
         price: "129 грн." ,
     },
     {
+        id:8,
         img: card8,
         title: "ПІЦЦА 4 М’ЯСА",
         description:
@@ -76,6 +84,7 @@ const pizzaItems = [
         price: "185 грн." ,
     },
     {
+        id:9,
         img: card9,
         title: "ПІЦЦА ПАПЕРОНИ",
         description:
@@ -100,8 +109,8 @@ function Pizza() {
 
     return (
         <div className={styles.cardsBlock}>
-        <ul> {slice.map((item, i) => (
-            <li>
+        <ul> {slice.map((item) => (
+            <li key={item.id}>
                 <div className={styles.card}>
                     <img src={item.img} alt="" />
                     <div className={styles.text}>

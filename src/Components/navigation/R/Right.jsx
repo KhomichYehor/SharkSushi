@@ -11,7 +11,7 @@ function Right() {
             <button type="button" href='./../public/index.html"'>
               <img src={glass} alt="#"></img>
             </button>
-            <input placeholder="Пошук"></input>
+            <input placeholder="Пошук" name="search"></input>
           </div>
           <div className={styles.cart}>
             <div className={styles.cartImage}>

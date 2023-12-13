@@ -14,6 +14,7 @@ import cart from './src/cart.png';
 
 const setsItems = [
     {
+        id:1,
         img: card1,
         title: "СЕТ ФРЕШ  ",
         description: "Каліфорнія з лососем в кунжуті, Сурімі рол, \n Креветка рол, Вега Рол, Чіз рол, \n макі лосось, макі огірок",
@@ -21,6 +22,7 @@ const setsItems = [
         price: "549 грн." ,
     },
     {
+        id:2,
         img: card2,
         title: "СЕТ РІО",
         description:
@@ -29,6 +31,7 @@ const setsItems = [
         price: "485 грн." ,
     },
     {
+        id:3,
         img: card3,
         title: "НЬЮ СЕТ",
         description:
@@ -37,6 +40,7 @@ const setsItems = [
         price: "380 грн." ,
     },
     {
+        id:4,
         img: card4,
         title: "СЕТ ГАРЯЧА ШТУЧКА",
         description:
@@ -45,6 +49,7 @@ const setsItems = [
         price: "569 грн." ,
     },
     {
+        id:5,
         img: card5,
         title: "СЕТ ВЕГА",
         description:
@@ -53,6 +58,7 @@ const setsItems = [
         price: "275 грн." ,
     },
     {
+        id:6,
         img: card6,
         title: "СЕТ ФІРМОВИЙ",
         description:
@@ -61,6 +67,7 @@ const setsItems = [
         price: "495 грн." ,
     },
     {
+        id:7,
         img: card7,
         title: "СЕТ FRIDAY",
         description:
@@ -69,6 +76,7 @@ const setsItems = [
         price: "575 грн." ,
     },
     {
+        id:8,
         img: card8,
         title: "СЕТ САМУРАЙ",
         description:
@@ -77,6 +85,7 @@ const setsItems = [
         price: "540 грн." ,
     },
     {
+        id:9,
         img: card9,
         title: "СЕТ ОУШЕН",
         description:
@@ -101,8 +110,8 @@ function Sets() {
 
     return(
         <div className={styles.cardsBlock}>
-        <ul> {slice.map((item, i) => (
-            <li>
+        <ul> {slice.map((item) => (
+            <li key={item.id}>
                 <div className={styles.card}>
                     <img src={item.img} alt="" />
                     <div className={styles.text}>

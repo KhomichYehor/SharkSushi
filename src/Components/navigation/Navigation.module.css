@@ -1,0 +1,11 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 40%, rgba(76,78,78,1) 90%, rgba(90,92,92,1) 100%);
+    border-bottom: 2px double #dda051;
+  }

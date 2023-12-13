@@ -10,6 +10,7 @@ import cart from './src/cart.png';
 
 const noodlesItems = [
     {
+        id:1,
         img: card1,
         title: "УДОН З ТЕЛЯТИНОЮ",
         description: "Удон, Телятина, Перець болгарський, \n Цибуля ріпчаста, Морква, Брокколі, \nСоус Азіатський",
@@ -17,6 +18,7 @@ const noodlesItems = [
         price: "131 грн." ,
     },
     {
+        id:2,
         img: card2,
         title: "РИСОВА З МОРЕКАМИ",
         description:
@@ -25,6 +27,7 @@ const noodlesItems = [
         price: "142 грн." ,
     },
     {
+        id:3,
         img: card3,
         title: "РИСОВА З ТЕЛЯТИНОЮ",
         description:
@@ -33,6 +36,7 @@ const noodlesItems = [
         price: "131 грн." ,
     },
     {
+        id:4,
         img: card4,
         title: "УДОН З ОВОЧАМИ",
         description:
@@ -41,6 +45,7 @@ const noodlesItems = [
         price: "67 грн." ,
     },
     {
+        id:5,
         img: card5,
         title: "РИСОВА З ОВОЧАМИ",
         description:
@@ -49,6 +54,7 @@ const noodlesItems = [
         price: "97 грн." ,
     },
     {
+        id:6,
         img: card6,
         title: "УДОН З МОРЕКАМИ",
         description:
@@ -74,8 +80,8 @@ function Noodles() {
 
     return (
         <div className={styles.cardsBlock}>
-        <ul> {slice.map((item, i) => (
-            <li>
+        <ul> {slice.map((item) => (
+            <li key={item.id}>
                 <div className={styles.card}>
                     <img src={item.img} alt="" />
                     <div className={styles.text}>

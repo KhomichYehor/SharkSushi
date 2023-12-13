@@ -14,6 +14,7 @@ import cart from './src/cart.png';
 
  const discountItems =[
     {
+        id: 1,
         img: card1,
         title: "СЕТ ГУРМАН ",
         description: "Ролл Сурімі, Ролл Каліфорнія з лососем в кунжуті \n Суші лосось, Суші вугор , Гункан Вугор",
@@ -21,6 +22,7 @@ import cart from './src/cart.png';
         price: "623 грн." ,
     },
     {
+        id: 2,
         img: card2,
         title: "СЕТ ФІЛАМАНІЯ",
         description:
@@ -29,6 +31,7 @@ import cart from './src/cart.png';
         price: "535 грн." ,
     },
     {
+        id: 3,
         img: card3,
         title: "СЕТ МЕГАФІШ",
         description:
@@ -37,6 +40,7 @@ import cart from './src/cart.png';
         price: "625 грн." ,
     },
     {
+        id: 4,
         img: card4,
         title: "СЕТ ФІЛА 50/50",
         description:
@@ -45,6 +49,7 @@ import cart from './src/cart.png';
         price: "499 грн." ,
     },
     {
+        id: 5,
         img: card5,
         title: "СЕТ ЛАЙТ",
         description:
@@ -53,6 +58,7 @@ import cart from './src/cart.png';
         price: "285 грн." ,
     },
     {
+        id: 6,
         img: card6,
         title: "СЕТ ВЕСЕЛКА",
         description:
@@ -61,6 +67,7 @@ import cart from './src/cart.png';
         price: "599 грн." ,
     },
     {
+        id: 7,
         img: card7,
         title: "СЕТ ТРОПІКАНА",
         description:
@@ -69,6 +76,7 @@ import cart from './src/cart.png';
         price: "495 грн." ,
     },
     {
+        id: 8,
         img: card8,
         title: "СЕТ ТРІО",
         description:
@@ -100,8 +108,8 @@ function Discount(){
     }
     return (
         <div className={styles.cardsBlock}>
-            <ul> {slice.map((item, i) => (
-                <li>
+            <ul> {slice.map((item) => (
+                <li key={item.id}>
                     <div className={styles.card}>
                         <img src={item.img} alt="" />
                         <div className={styles.text}>

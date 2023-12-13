@@ -7,12 +7,14 @@ import cart from './src/cart.png';
 
 const drinksItems = [
     {
+        id: 1,
         img: card1,
         title: "ЛИМОНАД ІМБІРНИЙ",
         description: "Напій безалкогольний імбірний",
         price: "39 грн." ,
     },
     {
+        id:2,
         img: card2,
         title: "МОРС ЯГІДНИЙ",
         description:
@@ -20,6 +22,7 @@ const drinksItems = [
         price: "39 грн." ,
     },
     {
+        id:3,
         img: card3,
         title: "COCA-COLA 0.5Л",
         description:
@@ -36,8 +39,8 @@ function Drinks() {
 
     return (
         <div className={styles.cardsBlock}>
-        <ul> {slice.map((item, i) => (
-            <li>
+        <ul> {slice.map((item) => (
+            <li key={item.id}>
                 <div className={styles.card}>
                     <img src={item.img} alt="" />
                     <div className={styles.text}>

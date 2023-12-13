@@ -13,6 +13,7 @@ import cart from './src/cart.png';
 
 const rollsItems = [
     {
+        id:1,
         img: card1,
         title: "РОЛ ІНЬ ЯНЬ",
         description: "Рис, Чорнило каракатиці, Норі, Лосось, \n Вугор, Сир Філадельфія, Авокадо, Унагі, Кунжу",
@@ -20,6 +21,7 @@ const rollsItems = [
         price: "272 грн." ,
     },
     {
+        id:2,
         img: card2,
         title: "РОЛ ВУЛКАН",
         description:
@@ -28,6 +30,7 @@ const rollsItems = [
         price: "285 грн." ,
     },
     {
+        id:3,
         img: card3,
         title: "КРЕВЕТКА РОЛ",
         description:
@@ -36,6 +39,7 @@ const rollsItems = [
         price: "189 грн." ,
     },
     {
+        id:4,
         img: card4,
         title: "ЧІЗ РОЛ",
         description:
@@ -44,6 +48,7 @@ const rollsItems = [
         price: "228 грн." ,
     },
     {
+        id:5,
         img: card5,
         title: "МАКІ З ЛОСОСЕМ",
         description:
@@ -52,6 +57,7 @@ const rollsItems = [
         price: "70 грн." ,
     },
     {
+        id:6,
         img: card6,
         title: "ЧОРНИЙ ПРИНЦ",
         description:
@@ -60,6 +66,7 @@ const rollsItems = [
         price: "129 грн." ,
     },
     {
+        id:7,
         img: card7,
         title: "ЗАПЕЧЕНИЙ  ЛОСОСЬ",
         description:
@@ -68,6 +75,7 @@ const rollsItems = [
         price: "149 грн." ,
     },
     {
+        id:8,
         img: card8,
         title: "СМАЖЕНИЙ ЛОСОСЬ",
         description:
@@ -76,6 +84,7 @@ const rollsItems = [
         price: "189 грн." ,
     },
     {
+        id:9,
         img: card9,
         title: "НІЖНИЙ ЛОСОСЬ",
         description:
@@ -100,8 +109,8 @@ function Rolls() {
 
     return (
         <div className={styles.cardsBlock}>
-        <ul> {slice.map((item, i) => (
-            <li>
+        <ul> {slice.map((item) => (
+            <li key={item.id}>
                 <div className={styles.card}>
                     <img src={item.img} alt="" />
                     <div className={styles.text}>

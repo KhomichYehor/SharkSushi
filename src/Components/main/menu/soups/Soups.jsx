@@ -11,6 +11,7 @@ import cart from './src/cart.png';
 
 const soupsItems = [
     {
+        id:1,
         img: card1,
         title: "РАМЕН З КУРКОЮ",
         description: "Локшина удон, Яйце вар, Курка маринована.жар, \n Гриби Шийтаке, Перець чилі, Кунжут, \n Бульйон для рам, Цибуля зелена, Норі",
@@ -18,6 +19,7 @@ const soupsItems = [
         price: "164 грн." ,
     },
     {
+        id:2,
         img: card2,
         title: "КРЕМ СУП З КУРКОЮ",
         description:
@@ -26,6 +28,7 @@ const soupsItems = [
         price: "144 грн." ,
     },
     {
+        id:3,
         img: card3,
         title: "МИСО ЛОСОСЬ",
         description:
@@ -34,6 +37,7 @@ const soupsItems = [
         price: "109 грн." ,
     },
     {
+        id:4,
         img: card4,
         title: "ТОМ-ЯМ",
         description:
@@ -42,6 +46,7 @@ const soupsItems = [
         price: "195 грн." ,
     },
     {
+        id:5,
         img: card5,
         title: "СУП СУІМОНО",
         description:
@@ -50,6 +55,7 @@ const soupsItems = [
         price: "109 грн." ,
     },
     {
+        id:6,
         img: card6,
         title: "РАМЕН З ТЕЛЯТИНОЮ",
         description:
@@ -58,6 +64,7 @@ const soupsItems = [
         price: "189 грн." ,
     },
     {
+        id:7,
         img: card7,
         title: "МІСО СУП",
         description:
@@ -82,8 +89,8 @@ function Soups() {
 
     return (
         <div className={styles.cardsBlock}>
-            <ul> {slice.map((item, i) => (
-                <li>
+            <ul> {slice.map((item) => (
+                <li key={item.id}>
                     <div className={styles.card}>
                         <img src={item.img} alt="" />
                         <div className={styles.text}>

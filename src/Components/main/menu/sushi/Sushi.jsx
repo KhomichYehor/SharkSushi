@@ -7,6 +7,7 @@ import cart from './src/cart.png';
 
 const sushiItems = [
     {
+        id:1,
         img: card1,
         title: "СУШІ ЛОСОСЬ",
         description: "Рис, лосось",
@@ -14,6 +15,7 @@ const sushiItems = [
         price: "65 грн." ,
     },
     {
+        id:2,
         img: card2,
         title: "СУШІ ВУГОР",
         description:
@@ -22,6 +24,7 @@ const sushiItems = [
         price: "75 грн." ,
     },
     {
+        id:3,
         img: card3,
         title: "СУШІ ТУНЕЦЬ",
         description:
@@ -39,8 +42,8 @@ function Sushi() {
 
     return (
         <div className={styles.cardsBlock}>
-        <ul> {slice.map((item, i) => (
-            <li>
+        <ul> {slice.map((item) => (
+            <li key={item.id}>
                 <div className={styles.card}>
                     <img src={item.img} alt="" />
                     <div className={styles.text}>
